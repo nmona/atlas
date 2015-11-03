@@ -13,6 +13,7 @@ h2 A collection of networks found in nature and everyday living.
         button data-remodal-action="close" class="remodal-close"
         h1 = network.name
         p = explain(network)
+        p = "Added by #{network.author}"
         = image_tag network.illustration, class: 'image'
         p = network.description
 
