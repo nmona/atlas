@@ -1,7 +1,13 @@
+@import "breakpoint"
+
 $sans: "jaf-facitweb", sans-serif
 $serif: "freight-text-pro", sans-serif
 
 $color: #8426a0
+
+$mobile: 0 600px
+$tablet: 601px 1000px
+$desktop: 1001px
 
 body
   margin: 50px
@@ -27,7 +33,12 @@ h2
 
 .grid
   .grid-item, .grid-sizer
-    width: 32%
+    @include breakpoint($desktop)
+      width: 32%
+    @include breakpoint($tablet)
+      width: 49%
+    @include breakpoint($mobile)
+      width: 100%
     margin-top: 2%
     border-radius: 3px
     background-color: #f8f8f8
