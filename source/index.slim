@@ -1,0 +1,13 @@
+h1 The Atlas of Networks
+
+h2 A collection of networks found in nature and everyday living.
+
+.grid
+  .grid-sizer
+  .gutter-sizer
+  - data.networks.each do |id, network|
+    .grid-item
+      = image_tag network.illustration, class: 'image'
+      .info = explain(network)
+
+p.footer This data has been collected as part of the research project "Basic Interaction Design Methods for Networked Artifacts".

@@ -1,0 +1,44 @@
+$sans: "jaf-facitweb", sans-serif
+$serif: "freight-text-pro", sans-serif
+
+$color: #8426a0
+
+body
+  margin: 50px
+  font-family: $serif
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  a
+    color: $color
+    text-decoration: none
+    font-weight: normal
+    &:hover
+      text-decoration: underline
+
+h1
+  font-family: $sans
+  margin-bottom: 0
+
+h2
+  font-family: $sans
+  font-size: 16px
+  margin-bottom: 30px
+
+.grid
+  .grid-item, .grid-sizer
+    width: 32%
+    border-radius: 3px
+    background-color: #f8f8f8
+    .image
+      border-radius: 3px 3px 0 0
+      width: 100%
+      display: block
+    .info
+      margin: 0
+      padding: 10px
+  .gutter-sizer
+    width: 2%
+
+.footer
+  margin-top: 50px
