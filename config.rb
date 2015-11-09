@@ -12,7 +12,7 @@ configure :build do
 end
 
 activate :google_analytics do |ga|
-  ga.tracking_id = ENV['GA_TRACKING_ID'] || ''
+  ga.tracking_id = ''
   ga.minify = true
 end
 
