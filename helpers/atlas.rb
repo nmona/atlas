@@ -17,4 +17,8 @@ module Atlas
     "#{a} <strong>#{network.definition.name}</strong> consists of <em>#{n}</em> interconnected by " +
       "<em>#{e}</em> using <em>#{network.definition.medium}</em>."
   end
+
+  def icon_tag(name)
+    image_tag "icons/#{name}.png", class: 'icon', data: { tooltip: name.titleize }
+  end
 end

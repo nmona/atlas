@@ -49,6 +49,17 @@ body
           width: 100%
       .image
         width: 100%
+      .icons
+        margin-top: 20px
+        text-align: right
+        @include breakpoint($mobile)
+          text-align: left
+        .icon
+          width: 48px
+          margin-left: 12px
+          @include breakpoint($mobile)
+            margin-left: 0
+            margin-right: 12px
     .right
       box-sizing: border-box
       @include breakpoint($desktop)
@@ -77,3 +88,9 @@ body
   border-top: 1px solid #666
   p
     margin: 25px 0
+
+.tooltip
+  .tooltip-content
+    font-family: $sans !important
+    font-size: 14px !important
+    font-weight: bold !important

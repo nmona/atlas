@@ -5,9 +5,13 @@ html
     title = current_page.data.title || 'Atlas'
     meta name='viewport' content='width=device-width, initial-scale=0.7, user-scalable=0'
     = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
+    = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.1.0/css/tooltip-theme-arrows.min.css'
     = stylesheet_link_tag 'all', media: 'screen'
     = javascript_include_tag '//use.typekit.net/wrs2ugz.js'
     = javascript_include_tag '//code.jquery.com/jquery-2.1.4.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.0/js/drop.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.1.0/js/tooltip.min.js'
     = javascript_include_tag 'all'
   body
     = yield

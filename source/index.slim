@@ -1,21 +1,18 @@
 .container
   .header
-    h1
-      = link_to '/' do
-        = image_tag 'logo.png', class: 'logo'
-    h2 A collection of networks found in nature and everyday living.
+    h1 = image_tag 'logo.png', class: 'logo'
+    h2 A collection of networked systems found in nature and everyday living.
   .list
     - data.networks.each do |id, network|
       .item
         .left
-          = image_tag "networks/#{network.meta.illustration}", class: 'image'
+          = image_tag "networks/#{network.illustration}", class: 'image'
+          .icons
+            = icon_tag network.attributes.topology
+            = icon_tag network.attributes.kind
+            = icon_tag network.attributes.visibility
         .right
           .explanation = explain(network)
-          .description = network.description.abstract
-          .author = "Added by #{network.meta.author}"
-          - if network.description.references.count > 0
-            ul.references
-              - network.description.references.each do |r|
-                li = r
+          .description = network.abstract
 
   .footer = partial :footer
