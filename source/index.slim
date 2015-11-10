@@ -7,10 +7,15 @@
   .list
     - data.networks.each do |id, network|
       .item
-        = image_tag network.illustration, class: 'image'
-        .info
+        .left
+          = image_tag "networks/#{network.illustration}", class: 'image'
+        .right
           .explanation = explain(network)
           .description = network.description
           .author = "Added by #{network.author}"
+          - if network.references.count > 0
+            ul.references
+              - network.references.each do |r|
+                li = r
 
   .footer = partial :footer
