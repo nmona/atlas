@@ -6,7 +6,7 @@
     - data.networks.each do |id, network|
       .item
         .left
-          = image_tag "networks/#{network.illustration}", class: 'image'
+          = linked_image_tag "networks/#{network.illustration}", class: 'image'
           .icons
             = icon_tag network.attributes.topology
             = icon_tag network.attributes.kind

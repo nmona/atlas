@@ -21,4 +21,8 @@ module Atlas
   def icon_tag(name)
     image_tag "icons/#{name}.png", class: 'icon', data: { tooltip: name.titleize }
   end
+
+  def linked_image_tag(path, *opts)
+    link_to image_tag(path, *opts), image_path(path)
+  end
 end
