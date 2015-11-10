@@ -30,8 +30,7 @@ module English
     a = article(network.name)
     n = enumerate(network.nodes)
     e = enumerate(network.edges)
-    t = topology(network.topology)
     "#{a} <strong>#{network.name}</strong> consists of <em>#{n}</em> interconnected by " +
-      "<em>#{e}</em> in a <em>#{t}</em> topology."
+      "<em>#{e}</em> communicating through <em>#{network.medium}</em>."
   end
 end
