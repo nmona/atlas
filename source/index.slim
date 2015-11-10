@@ -6,15 +6,6 @@ h2 A collection of networks found in nature and everyday living.
   .grid-sizer
   .gutter-sizer
   - data.networks.each do |id, network|
-    a.grid-item href="##{id}"
+    a.grid-item href="#{id.dasherize}"
       = image_tag network.illustration, class: 'image'
       .info = explain(network)
-      .remodal data-remodal-id=id
-        button data-remodal-action="close" class="remodal-close"
-        h1 = network.name
-        p = explain(network)
-        p = "Added by #{network.author}"
-        = image_tag network.illustration, class: 'image'
-        p = network.description
-
-p.footer This data has been collected as part of the research project "Basic Interaction Design Methods for Networked Artifacts".
