@@ -1,0 +1,19 @@
+# Author: Joël Gähwiler
+# Date: 10-11-2015
+# References:
+# - http://onlinelibrary.wiley.com/doi/10.1111/nph.13288/full
+
+definition:
+  name: Fungal Network
+  nodes: Plants
+  edges: Fungi
+  medium: Chemicals
+
+attributes:
+  topology: distributed
+  kind: natural
+  visibility: hidden
+
+abstract: In a recently published paper researchers discovered that neighboring plants are interconnected through an underground fungal network. The plants are able to warn each other from upcoming insect attacks by sending chemical signals through the network. With that information the other plants can activate their chemical defense system and fight the intruding insects.
+
+illustration: fungal_network.png

@@ -1,0 +1,23 @@
+# Author: Joël Gähwiler
+# Date: 10-11-2015
+# References:
+# - https://en.wikipedia.org/wiki/Electrical_grid
+
+definition:
+  name: Power Grid
+  nodes:
+    - Power Plants
+    - Transformer Stations
+    - Relay Stations
+    - Wall Sockets
+  edges: Power Lines
+  medium: Electricity
+
+attributes:
+  topology: decentralized
+  kind: artificial
+  visibility: visible
+
+abstract: Power grids handle production, distribution and consumption of electricity from a small to a global scale. A variety of power plants generate electricity and inject high voltages into these networks. Close to villages and cities, the power gets transformed to lower voltages until it is relayed into buildings and consumed via wall sockets.
+
+illustration: power_grid.gif
