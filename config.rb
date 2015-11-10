@@ -11,10 +11,6 @@ configure :build do
   activate :asset_hash
 end
 
-data.networks.each do |id, network|
-  proxy "/#{id.dasherize}.html", 'network.html', locals: { id: id, network: network }, ignore: true
-end
-
 activate :google_analytics do |ga|
   ga.tracking_id = ''
   ga.minify = true

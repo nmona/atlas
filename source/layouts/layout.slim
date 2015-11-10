@@ -6,12 +6,9 @@ html
     meta name='viewport' content='width=device-width, initial-scale=0.7, user-scalable=0'
     = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
     = stylesheet_link_tag 'all', media: 'screen'
-    = javascript_include_tag 'https://use.typekit.net/wrs2ugz.js'
+    = javascript_include_tag '//use.typekit.net/wrs2ugz.js'
     = javascript_include_tag '//code.jquery.com/jquery-2.1.4.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js'
     = javascript_include_tag 'all'
   body
     = yield
-    .footer This data has been collected as part of the research project "Basic Interaction Design Methods for Networked Artifacts".
     = google_analytics_tag

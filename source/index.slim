@@ -1,11 +1,16 @@
-h1 The Atlas of Networks
+.container
+  .header
+    h1
+      = link_to '/' do
+        = image_tag 'logo.png', class: 'logo'
+    h2 A collection of networks found in nature and everyday living.
+  .list
+    - data.networks.each do |id, network|
+      .item
+        = image_tag network.illustration, class: 'image'
+        .info
+          .explanation = explain(network)
+          .description = network.description
+          .author = "Added by #{network.author}"
 
-h2 A collection of networks found in nature and everyday living.
-
-.grid
-  .grid-sizer
-  .gutter-sizer
-  - data.networks.each do |id, network|
-    a.grid-item href="#{id.dasherize}"
-      = image_tag network.illustration, class: 'image'
-      .info = explain(network)
+  .footer = partial :footer

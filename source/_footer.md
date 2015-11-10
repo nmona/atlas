@@ -1,0 +1,1 @@
+This collection is a part of [networkedartifacts.info](http://networkedartifacts.info) and curated by its authors. The data has been collected as part of the research project "Basic Interaction Design Methods for Networked Artifacts". The entries are authored by students as an exercise.

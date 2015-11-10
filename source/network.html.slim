@@ -1,9 +1,0 @@
-h1 = network.name
-p = explain(network)
-= image_tag network.illustration, class: 'image'
-p = network.description
-- if network.references.count > 0
-  ul
-    - network.references.each do |r|
-      li = r
-p = "Added by #{network.author}"

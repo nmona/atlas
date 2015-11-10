@@ -1,3 +1,4 @@
+@import "bourbon"
 @import "breakpoint"
 
 $sans: "jaf-facitweb", sans-serif
@@ -6,11 +7,10 @@ $serif: "freight-text-pro", sans-serif
 $color: #8426a0
 
 $mobile: 0 600px
-$tablet: 601px 1000px
-$desktop: 1001px
+$desktop: 601px
 
 body
-  margin: 50px
+  margin: 0
   font-family: $serif
   font-size: 16px
   -webkit-font-smoothing: antialiased
@@ -18,37 +18,50 @@ body
   a
     color: $color
     text-decoration: none
+
+.container
+  max-width: 1000px
+  margin: 0 auto
+  padding: 50px
+
+.header
+  padding-bottom: 50px
+  border-bottom: 1px solid #666
+  .logo
+    height: 72px
+  h2
+    font-family: $sans
+    font-size: 16px
     font-weight: normal
 
-h1
-  font-family: $sans
-  margin-bottom: 0
-
-h2
-  font-family: $sans
-  font-size: 16px
-
-.grid
-  .grid-item, .grid-sizer
-    @include breakpoint($desktop)
-      width: 32%
-    @include breakpoint($tablet)
-      width: 49%
-    @include breakpoint($mobile)
-      width: 100%
-    margin-top: 2%
-    border-radius: 3px
-    background-color: #f8f8f8
+.list
+  .item
+    display: block
+    overflow: hidden
+    border-bottom: 1px solid #666
+    padding: 25px 0
     .image
-      border-radius: 3px 3px 0 0
-      width: 100%
-      display: block
+      @include breakpoint($desktop)
+        float: left
+        width: 40%
+      @include breakpoint($mobile)
+        width: 100%
     .info
-      margin: 0
-      padding: 10px
-      color: black
-  .gutter-sizer
-    width: 2%
+      box-sizing: border-box
+      @include breakpoint($desktop)
+        float: right
+        width: 60%
+        padding-left: 25px
+      @include breakpoint($mobile)
+        padding-top: 25px
+      .explanation
+        font-size: 36px
+      .description
+        margin-top: 15px
+        font-size: 18px
+      .author
+        margin-top: 15px
+        font-size: 13px
 
 .footer
   margin-top: 50px

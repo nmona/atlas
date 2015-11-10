@@ -31,6 +31,6 @@ module English
     n = enumerate(network.nodes)
     e = enumerate(network.edges)
     "#{a} <strong>#{network.name}</strong> consists of <em>#{n}</em> interconnected by " +
-      "<em>#{e}</em> communicating through <em>#{network.medium}</em>."
+      "<em>#{e}</em> using <em>#{network.medium}</em>."
   end
 end
