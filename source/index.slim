@@ -8,14 +8,14 @@
     - data.networks.each do |id, network|
       .item
         .left
-          = image_tag "networks/#{network.illustration}", class: 'image'
+          = image_tag "networks/#{network.meta.illustration}", class: 'image'
         .right
           .explanation = explain(network)
-          .description = network.description
-          .author = "Added by #{network.author}"
-          - if network.references.count > 0
+          .description = network.description.abstract
+          .author = "Added by #{network.meta.author}"
+          - if network.description.references.count > 0
             ul.references
-              - network.references.each do |r|
+              - network.description.references.each do |r|
                 li = r
 
   .footer = partial :footer
