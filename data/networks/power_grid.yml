@@ -28,13 +28,12 @@ graph:
     p2: Power Plant
     p3: Power Plant
     t1: Tranformer Station
-    t2: Transformer Station
     r1: Relay Station
     r2: Relay Station
     w1: Wall Socket
     w2: Wall Socket
     w3: Wall Socket
   links:
-    - p1:t1 p2:t1 p3:t2
-    - t1:t2 t1:r1 t2:r1 r2:r1
+    - p1:t1 p2:t1 p3:t1
+    - t1:r1 t1:r1 r2:r1
     - w1:r1 w2:r1 w3:r2

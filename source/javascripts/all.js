@@ -33,12 +33,12 @@ $(function(){
     var el = $(this);
     var data = parseData(JSON.parse($('#' + el.data('id')).html()));
 
-    console.log(data);
-
-    var graph = d3.layout.force()
-      .charge(-120)
-      .linkDistance(60)
-      .size([el.width(), el.height()]);
+    var graph = cola.d3adaptor()
+      .linkDistance(75)
+      .avoidOverlaps(true)
+      .symmetricDiffLinkLengths(75)
+      .size([el.width(), el.height()])
+      .start(10, 15, 20);
 
     var svg = d3.select(this);
 
