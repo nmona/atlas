@@ -9,12 +9,12 @@
           = linked_image_tag "networks/#{network.image}", class: 'image'
           script type="application/json" id=id = JSON.generate(network.graph.to_h)
           svg.graph height=300 data-id=id
+        .right
+          .explanation = explain(network)
+          .description = network.abstract
           .icons
             = icon_tag network.attributes.topology
             = icon_tag network.attributes.kind
             = icon_tag network.attributes.visibility
-        .right
-          .explanation = explain(network)
-          .description = network.abstract
 
   .footer = partial :footer

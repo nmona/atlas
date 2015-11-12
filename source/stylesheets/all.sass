@@ -49,6 +49,7 @@ body
           width: 100%
       .image
         width: 100%
+        display: block
       .graph
         width: 100%
         background-color: #eee
@@ -65,26 +66,16 @@ body
         .link
           stroke-width: 1.5
           stroke: black
-      .icons
-        margin-top: 20px
-        text-align: right
-        @include breakpoint($mobile)
-          text-align: left
-        .icon
-          width: 48px
-          margin-left: 12px
-          @include breakpoint($mobile)
-            margin-left: 0
-            margin-right: 12px
     .right
       box-sizing: border-box
       @include breakpoint($desktop)
         float: right
         width: 60%
-        padding-left: 30px
+        padding-left: 25px
       @include breakpoint($mobile)
         padding-top: 25px
       .explanation
+        margin-top: -5px
         font-size: 36px
       .description
         margin-top: 15px
@@ -98,6 +89,14 @@ body
         padding-left: 0
         li:before
           content: "– "
+      .icons
+        margin-top: 20px
+        text-align: left
+        @include breakpoint($mobile)
+          text-align: left
+        .icon
+          width: 42px
+          margin-right: 12px
 
 .footer
   margin-top: 50px
