@@ -40,7 +40,8 @@ $(function(){
       .size([el.width(), el.height()])
       .start(10, 15, 20);
 
-    var svg = d3.select(this);
+    var svg = d3.select(this)
+      .attr('viewBox', '0 0 ' + el.width() + ' ' + el.height());
 
     graph
       .nodes(data.nodes)
