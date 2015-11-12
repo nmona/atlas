@@ -16,4 +16,14 @@ attributes:
 
 abstract: In a recently published paper researchers discovered that neighboring plants are interconnected through an underground fungal network. The plants are able to warn each other from upcoming insect attacks by sending chemical signals through the network. With that information the other plants can activate their chemical defense system and fight the intruding insects.
 
-illustration: fungal_network.png
+image: power_grid.jpg
+
+graph:
+  nodes:
+    p1: Plant
+    p2: Plant
+    p3: Plant
+    p4: Plant
+    p5: Plant
+  links:
+    - p1:p2 p2:p3 p3:p4 p4:p5

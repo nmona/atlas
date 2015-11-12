@@ -6,7 +6,9 @@
     - data.networks.each do |id, network|
       .item
         .left
-          = linked_image_tag "networks/#{network.illustration}", class: 'image'
+          = linked_image_tag "networks/#{network.image}", class: 'image'
+          script type="application/json" id=id = JSON.generate(network.graph.to_h)
+          svg.graph height=300 data-id=id
           .icons
             = icon_tag network.attributes.topology
             = icon_tag network.attributes.kind
