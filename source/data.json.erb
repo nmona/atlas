@@ -2,7 +2,7 @@
   network.merge({
     id: id,
     generated: {
-      image_path: image_path("networks/#{network.meta.image}"),
+      image_path: 'http://atlas.networkedartifacts.info' + image_path("networks/#{network.meta.image}"),
       explanation: explain(network)
     }
   })
