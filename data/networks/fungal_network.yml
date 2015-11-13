@@ -16,6 +16,8 @@ attributes:
   origin: evolved
   visibility: hidden
   usage: communication
+  arrangement: dynamic
+  linkage: dense
 
 meta:
   image: power_grid.jpg

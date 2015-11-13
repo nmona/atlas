@@ -25,6 +25,8 @@ Section `attributes`:
 - `origin`: Either `evolved` or `designed`.
 - `visibility`: Either `visible` or `hidden`.
 - `usage`: Either `communication`, `transportation` or `organisation`.
+- `arrangement`: Either `static` or `dynamic`.
+- `linkage`: Either `dense` or `loose`.
 
 Section `meta`:
 

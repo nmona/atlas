@@ -20,6 +20,8 @@ attributes:
   origin: designed
   visibility: visible
   usage: transportation
+  arrangement: static
+  linkage: loose
 
 meta:
   image: fungal_network.jpg
