@@ -15,7 +15,7 @@ definition:
 
 attributes:
   topology: decentralized
-  kind: artificial
+  origin: artificial
   visibility: visible
 
 abstract: Power grids handle production, distribution and consumption of electricity from a small to a global scale. A variety of power plants generate electricity and inject high voltages into these networks. Close to villages and cities, the power gets transformed to lower voltages until it is relayed into buildings and consumed via wall sockets.

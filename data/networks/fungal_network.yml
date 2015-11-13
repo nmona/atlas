@@ -11,7 +11,7 @@ definition:
 
 attributes:
   topology: distributed
-  kind: natural
+  origin: natural
   visibility: hidden
 
 abstract: In a recently published paper researchers discovered that neighboring plants are interconnected through an underground fungal network. The plants are able to warn each other from upcoming insect attacks by sending chemical signals through the network. With that information the other plants can activate their chemical defense system and fight the intruding insects.
