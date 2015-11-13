@@ -13,6 +13,8 @@ attributes:
   topology: distributed
   origin: natural
   visibility: hidden
+  usage: communication
+  scale: local
 
 meta:
   image: power_grid.jpg

@@ -17,6 +17,8 @@ attributes:
   topology: decentralized
   origin: artificial
   visibility: visible
+  usage: transportation
+  scale: global
 
 meta:
   image: fungal_network.jpg

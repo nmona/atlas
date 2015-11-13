@@ -13,8 +13,7 @@
           .explanation = explain(network)
           .description = network.meta.abstract
           .icons
-            = icon_tag network.attributes.topology
-            = icon_tag network.attributes.origin
-            = icon_tag network.attributes.visibility
+            - %w(topology origin visibility usage scale).each do |attr|
+              = icon_tag network.attributes[attr.to_sym]
 
   .footer = partial :footer
