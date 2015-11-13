@@ -21,7 +21,7 @@ Section `attributes`:
 - `origin`: Either `natural` or `artificial`.
 - `visibility`: Either `visible` or `hidden`.
 
-Additional information:
+Section `meta`:
 
 - `abstract`: Free-text describing the network.
 - `image`: Photograph of the whole or partial network.
