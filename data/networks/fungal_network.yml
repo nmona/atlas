@@ -18,6 +18,8 @@ attributes:
   usage: communication
   arrangement: dynamic
   linkage: dense
+  perception: partialy
+  stability: durable
 
 meta:
   image: power_grid.jpg

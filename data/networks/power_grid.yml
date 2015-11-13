@@ -22,6 +22,8 @@ attributes:
   usage: transportation
   arrangement: static
   linkage: loose
+  perception: separately
+  stability: durable
 
 meta:
   image: fungal_network.jpg
