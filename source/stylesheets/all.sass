@@ -4,8 +4,6 @@
 $sans: "jaf-facitweb", sans-serif
 $serif: "freight-text-pro", sans-serif
 
-$color: #8426a0
-
 $mobile: 0 700px
 $desktop: 701px
 
@@ -16,11 +14,11 @@ body
   -webkit-font-smoothing: antialiased
   text-rendering: optimizelegibility
   a
-    color: $color
-    text-decoration: none
+    color: inherit
+    text-decoration: underline
 
 .container
-  max-width: 1000px
+  max-width: 900px
   margin: 0 auto
   padding: 50px
 
@@ -38,9 +36,9 @@ body
   .item
     display: block
     overflow: hidden
-    border-top: 1px solid #666
+    border-top: 2px solid #ddd
     padding: 25px 0
-    margin-top: 25px
+    margin-top: 50px
     .left
       @include breakpoint($desktop)
         float: left
@@ -100,10 +98,10 @@ body
 
 .footer
   margin-top: 50px
-  border-top: 1px solid #666
+  font-family: $sans
   p
     margin: 25px 0
-    font-size: 18px
+    font-size: 15px
 
 .tooltip
   .tooltip-content
