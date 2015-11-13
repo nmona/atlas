@@ -3,7 +3,7 @@
     id: id,
     generated: {
       image_path: 'http://atlas.networkedartifacts.info' + image_path("networks/#{network.meta.image}"),
-      explanation: explain(network)
+      explanation: strip_tags(explain(network))
     }
   })
 }) %>
