@@ -1,3 +1,5 @@
+require 'active_support/core_ext/array/grouping'
+
 activate :livereload
 activate :directory_indexes
 

@@ -12,8 +12,12 @@
         .right
           .explanation = explain(network)
           .description = network.meta.abstract
-          .icons
-            - %w(topology origin visibility usage scale).each do |attr|
-              = icon_tag network.attributes[attr.to_sym]
+          table.attributes
+            - %w(topology origin visibility usage scale).in_groups_of(2) do |group|
+              tr
+                - group.each do |attr|
+                  - if attr
+                    th = attr.titleize
+                    td = network.attributes[attr.to_sym].titleize
 
   .footer = partial :footer

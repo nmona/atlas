@@ -78,23 +78,20 @@ body
       .description
         margin-top: 15px
         font-size: 24px
-      .author
-        margin-top: 25px
-        font-size: 13px
-      .references
-        font-size: 12px
-        list-style: none
-        padding-left: 0
-        li:before
-          content: "– "
-      .icons
+      .attributes
+        width: 70%
         margin-top: 20px
-        text-align: left
-        @include breakpoint($mobile)
+        th, td
+          padding:
+            top: 1px
+            right: 10px
+            bottom: 1px
+          font-size: 14px
+        th
+          width: 15%
           text-align: left
-        .icon
-          width: 42px
-          margin-right: 12px
+        td
+          width: 20%
 
 .footer
   margin-top: 50px
