@@ -44,7 +44,7 @@ $(function(){
 
     var group = svg.append('g')
       .attr('class', 'group')
-      .attr('transform', 'translate(0, -25)');
+      .attr('transform', 'translate(0, -27)');
 
     graph
       .nodes(data.nodes)
@@ -67,9 +67,6 @@ $(function(){
     nodes.append('text')
       .attr('y', 5)
       .text(function(d){ return d.id.toUpperCase(); });
-
-    nodes.append('title')
-      .text(function(d) { return d.name; });
 
     nodes.each(function(d){
       new Tooltip({
