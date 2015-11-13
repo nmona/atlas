@@ -37,23 +37,26 @@ $(function(){
       .linkDistance(75)
       .avoidOverlaps(true)
       .symmetricDiffLinkLengths(75)
-      .size([el.width(), el.height()])
-      .start(10, 15, 20);
+      .size([el.width(), el.height()]);
 
     var svg = d3.select(this)
       .attr('viewBox', '0 0 ' + el.width() + ' ' + el.height());
+
+    var group = svg.append('g')
+      .attr('class', 'group')
+      .attr('transform', 'translate(0, -25)');
 
     graph
       .nodes(data.nodes)
       .links(data.links)
       .start();
 
-    var links = svg.selectAll('.link')
+    var links = group.selectAll('.link')
       .data(data.links)
       .enter().append('line')
         .attr('class', 'link');
 
-    var nodes = svg.selectAll('.node')
+    var nodes = group.selectAll('.node')
       .data(data.nodes)
       .enter().append('g')
         .attr('class', 'node');

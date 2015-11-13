@@ -25,6 +25,9 @@ graph:
     p3: Plant
     p4: Plant
     p5: Plant
+    p6: Plant
+    p7: Plant
   links:
     - p1:p2 p2:p3 p3:p4 p4:p5
-    - p1:p4 p3:p1 p1:p5
+    - p1:p4 p3:p1 p3:p5 p4:p6
+    - p5:p6 p3:p7 p5:p7
