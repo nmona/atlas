@@ -16,8 +16,7 @@
             - %w(topology origin visibility usage scale).in_groups_of(2) do |group|
               tr
                 - group.each do |attr|
-                  - if attr
-                    th = attr.titleize
-                    td = network.attributes[attr.to_sym].titleize
+                  th = attr ? attr.titleize : ''
+                  td = attr ? network.attributes[attr.to_sym].titleize : ''
 
   .footer = partial :footer
