@@ -15,7 +15,7 @@ $(function(){
       map[k] = node;
     });
 
-    data.links.forEach(function(line){
+    data.edges.forEach(function(line){
       line.split(' ').forEach(function(segment){
         var config = segment.split(':');
         ret.links.push({
