@@ -13,7 +13,7 @@
           .explanation = explain(network)
           .description = network.meta.abstract
           table.attributes
-            - %w(topology origin visibility usage scale).in_groups_of(2) do |group|
+            - %w(topology scale kind origin visibility usage).in_groups_of(2) do |group|
               tr
                 - group.each do |attr|
                   th = attr ? attr.titleize : ''

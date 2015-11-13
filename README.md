@@ -20,10 +20,11 @@ Section `definition`:
 Section `attributes`:
 
 - `topology`: Either `centralized`, `decentralized` or `distributed`.
-- `origin`: Either `natural` or `artificial`.
-- `visibility`: Either `visible` or `hidden`.
-- `usage`: Either `communication`, `distribution` or `organisation`.
 - `scale`: Either `local` or `global`.
+- `kind`: Either `natural` or `artificial`.
+- `origin`: Either `evolved` or `designed`.
+- `visibility`: Either `visible` or `hidden`.
+- `usage`: Either `communication`, `transportation` or `organisation`.
 
 Section `meta`:
 

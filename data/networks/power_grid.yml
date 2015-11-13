@@ -15,10 +15,11 @@ definition:
 
 attributes:
   topology: decentralized
-  origin: artificial
+  scale: global
+  kind: artificial
+  origin: designed
   visibility: visible
   usage: transportation
-  scale: global
 
 meta:
   image: fungal_network.jpg

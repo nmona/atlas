@@ -11,10 +11,11 @@ definition:
 
 attributes:
   topology: distributed
-  origin: natural
+  scale: local
+  kind: natural
+  origin: evolved
   visibility: hidden
   usage: communication
-  scale: local
 
 meta:
   image: power_grid.jpg
