@@ -27,7 +27,7 @@ Section `attributes`:
 - `usage`: Either `communication`, `transportation` or `organisation`.
 - `arrangement`: Either `static` or `dynamic`.
 - `linkage`: Either `dense` or `loose`.
-- `perception`: Either `whole`, `partialy` or `separately`.
+- `perception`: Either `entirely`, `partially` or `separately`.
 - `stability`: Either `ephemeral` or `durable`.
 
 Section `meta`:

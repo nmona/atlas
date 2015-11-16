@@ -18,7 +18,7 @@ attributes:
   usage: communication
   arrangement: dynamic
   linkage: dense
-  perception: partialy
+  perception: partially
   stability: durable
 
 meta:
