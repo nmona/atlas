@@ -8,21 +8,10 @@ All networks are classified the same way and stored in a [flat-file database](ht
 
 ### Section `definition`
 
-#### `name`
-
-The specific name of the network, which should be pluralizable.
-
-#### `nodes`
-
-A list of 1 to ∞ node names that appear as "things" in the network.
-
-#### `edges`
-
-A list of 1 to ∞ edge names that interconnect the nodes in the network.
-
-### `mediums`
-
-A list of 1 to ∞ medium names that are used by the network to serve its purpose.
+- `name`: The specific name of the network, which should be pluralizable.
+- `nodes`: A list of 1 to ∞ node names that appear as "things" in the network.
+- `edges`: A list of 1 to ∞ edge names that interconnect the nodes in the network.
+- `mediums`: A list of 1 to ∞ medium names that are used by the network to serve its purpose.
 
 ### Section `attributes`
 
