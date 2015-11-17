@@ -11,7 +11,7 @@ definition:
     - Relay Stations
     - Wall Sockets
   edges: Power Lines
-  medium: Electricity
+  mediums: Electricity
 
 attributes:
   topology: decentralized

@@ -8,10 +8,10 @@ All networks are classified the same way and stored in a [flat-file database](ht
 
 Section `definition`:
 
-- `name`: What is the specific name of the network?
-- `nodes`: What are the nodes that appear in this network?
-- `edges`: What kind of connections interconnect the nodes?
-- `medium`: What medium is used for that interconnection?
+- `name`: The name of the network. _What is the specific name of the network?_
+- `nodes`: A list of 1 to ∞ node names. _What are the nodes that appear in this network?_
+- `edges`: A list of 1 to ∞ edge names. _What kind of connections interconnect the nodes?_
+- `mediums`: A list of 1 to ∞ medium names. _What medium is used for that interconnection?_
 
 Section `attributes`:
 

@@ -7,7 +7,7 @@ definition:
   name: Fungal Network
   nodes: Plants
   edges: Fungi
-  medium: Chemicals
+  mediums: Chemicals
 
 attributes:
   topology: distributed

@@ -17,8 +17,9 @@ module Atlas
     a = article(network.definition.name)
     n = enumerate(network.definition.nodes)
     e = enumerate(network.definition.edges)
+    m = enumerate(network.definition.mediums)
     "#{a} <strong>#{network.definition.name}</strong> consists of <em>#{n}</em> interconnected by " +
-      "<em>#{e}</em> using <em>#{network.definition.medium}</em>."
+      "<em>#{e}</em> using <em>#{m}</em>."
   end
 
   def linked_image_tag(path, *opts)
