@@ -26,9 +26,9 @@ Section `attributes`:
 - `visibility`: Either `visible` or `hidden`.
 - `usage`: Either `communication`, `transportation` or `organisation`.
 - `arrangement`: Either `static` or `dynamic`.
-- `linkage`: Either `dense` or `loose`.
 - `perception`: Either `entirely`, `partially` or `separately`.
 - `stability`: Either `ephemeral` or `durable`.
+- `reactivity`: Either `adaptive` or `limited`.
 
 Section `meta`:
 

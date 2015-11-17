@@ -17,9 +17,9 @@ attributes:
   visibility: hidden
   usage: communication
   arrangement: dynamic
-  linkage: dense
   perception: partially
   stability: durable
+  reactivity: adaptive
 
 meta:
   image: power_grid.jpg

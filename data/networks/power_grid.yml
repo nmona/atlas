@@ -21,9 +21,9 @@ attributes:
   visibility: visible
   usage: transportation
   arrangement: static
-  linkage: loose
   perception: separately
   stability: durable
+  reactivity: limited
 
 meta:
   image: fungal_network.jpg

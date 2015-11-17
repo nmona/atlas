@@ -13,10 +13,10 @@
           .explanation = explain(network)
           .description = network.meta.abstract
           table.attributes
-            - %w(topology scale kind origin visibility usage arrangement linkage perception stability).in_groups_of(2) do |group|
+            - ATTRIBUTES.in_groups_of(2) do |group|
               tr
                 - group.each do |attr|
-                  th = attr ? attr.titleize : ''
-                  td = attr ? network.attributes[attr.to_sym].titleize : ''
+                  th = attr ? attr.to_s.titleize : ''
+                  td = attr ? network.attributes[attr].titleize : ''
 
   .footer = partial :footer

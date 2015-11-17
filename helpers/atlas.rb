@@ -1,4 +1,7 @@
 module Atlas
+  ATTRIBUTES = [:topology, :scale, :kind, :origin, :visibility, :usage,
+    :arrangement, :perception, :stability, :reactivity]
+
   def enumerate(list_or_name)
     return list_or_name if list_or_name.is_a? String
     return '' unless list_or_name.is_a? Array
