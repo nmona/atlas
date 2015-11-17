@@ -2,8 +2,6 @@
 
 **A collection of networked systems found in nature and everyday living.**
 
-This collection is a part of [networkedartifacts.info](http://networkedartifacts.info) and curated by its authors. The data has been collected in the research project "Basic Interaction Design Methods for Networked Artifacts". The entries have been authored by students as an analytical exercise in the course "Embodied Interaction" at the Zurich University of the Arts in 2015.
-
 ## Classification
 
 All networks are classified the same way and stored in a [flat-file database](https://github.com/networkedartifacts/atlas/tree/master/data/networks).
