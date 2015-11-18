@@ -1,0 +1,40 @@
+# Author: Joël Gähwiler
+# Date: 10-11-2015
+# References:
+# - http://onlinelibrary.wiley.com/doi/10.1111/nph.13288/full
+
+definition:
+  name: Neuronal Network
+  nodes: Neurons
+  edges: Sensory System
+  mediums: Neurotransmitter
+
+attributes:
+  topology: distributed
+  scale: local
+  kind: natural
+  origin: evolved
+  visibility: hidden
+  usage: communication
+  arrangement: dynamic
+  perception: partially
+  stability: durable
+  reactivity: adaptive
+
+meta:
+  image: neuronal_network.jpg
+  abstract: In Neuroscience a neuronal network is understood as a part of the nervous system building a functional unit. In Computational Neuroscience the term is also used for simplified models of the biological network. A neuronal network can also be artifically produced or simulated. Neuronal plasticity allows neurons to form networks dynamically. This allows the network to learn and strengthen connections as well as to weaken and unlearn.
+
+graph:
+  nodes:
+    p1: Plant
+    p2: Plant
+    p3: Plant
+    p4: Plant
+    p5: Plant
+    p6: Plant
+    p7: Plant
+  edges:
+    - p1:p2 p2:p3 p3:p4 p4:p5
+    - p1:p4 p3:p1 p3:p5 p4:p6
+    - p5:p6 p3:p7 p5:p7
