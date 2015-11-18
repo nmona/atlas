@@ -1,0 +1,40 @@
+# Author: Mona Neubauer
+# Date: 10-11-2015
+# References:
+# - http://onlinelibrary.wiley.com/doi/10.1111/nph.13288/full
+
+definition:
+  name: Electric Circuit
+  nodes: electrical components
+  edges: conductive materials
+  mediums: Copper or Tin
+
+attributes:
+  topology: local
+  scale: local
+  kind: artificial
+  origin: human invention
+  visibility: often hidden
+  usage: passing signals
+  arrangement: circular
+  perception: partially
+  stability: durable
+  reactivity: to source
+
+meta:
+  image: electric_circuit.png
+  abstract: An electric circuit is a closed loop to pass signals. It is depending on a source.
+
+graph:
+  nodes:
+    p1: Plant
+    p2: Plant
+    p3: Plant
+    p4: Plant
+    p5: Plant
+    p6: Plant
+    p7: Plant
+  edges:
+    - p1:p2 p2:p3 p3:p4 p4:p5
+    - p1:p4 p3:p1 p3:p5 p4:p6
+    - p5:p6 p3:p7 p5:p7

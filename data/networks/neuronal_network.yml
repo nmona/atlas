@@ -1,4 +1,4 @@
-# Author: Joël Gähwiler
+# Author: Mona Neubauer
 # Date: 10-11-2015
 # References:
 # - http://onlinelibrary.wiley.com/doi/10.1111/nph.13288/full
@@ -6,7 +6,7 @@
 definition:
   name: Neuronal Network
   nodes: Neurons
-  edges: Sensory System
+  edges: Axons
   mediums: Neurotransmitter
 
 attributes:

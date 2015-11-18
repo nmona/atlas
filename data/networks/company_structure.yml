@@ -1,0 +1,40 @@
+# Author: Mona Neubauer
+# Date: 10-11-2015
+# References:
+# - http://onlinelibrary.wiley.com/doi/10.1111/nph.13288/full
+
+definition:
+  name: Company
+  nodes: people
+  edges: responsabilities
+  mediums: incentives
+
+attributes:
+  topology: divers (depending on the company)
+  scale: local
+  kind: artificial
+  origin: human invention
+  visibility: company structure partially visible
+  usage: working
+  arrangement: hierarchically or heterarchically
+  perception: visibility desirable
+  stability: durable to astable
+  reactivity: adaptive
+
+meta:
+  image: company_structure.jpg
+  abstract: A company is an artificial human togetherness with a commercial objective. Depending on the company the structure can be hierarchical or heterarchic. The company structure allows people to coordinate and strieve for a common goal.
+
+graph:
+  nodes:
+    p1: Plant
+    p2: Plant
+    p3: Plant
+    p4: Plant
+    p5: Plant
+    p6: Plant
+    p7: Plant
+  edges:
+    - p1:p2 p2:p3 p3:p4 p4:p5
+    - p1:p4 p3:p1 p3:p5 p4:p6
+    - p5:p6 p3:p7 p5:p7
